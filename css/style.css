@@ -1,0 +1,285 @@
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    /* color: #fff; */
+}
+.container{
+    max-width: 1438px;
+    margin: 0 auto;
+    padding-inline: 20px;
+}
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    /* background: rgba(0, 0, 0, 0.6); Semi-transparent navbar */
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: #00ff88; /* Accent color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00ff88;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Hero Section Styling */
+.hero {
+    height: 100vh;
+    background: url('../img/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    box-shadow: 0px -50px 50px rgba(255, 255, 255, 0.5);
+   
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); Dark overlay for better readability */
+    z-index: 1;
+    
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00ff88;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00cc6e;
+}
+
+/* Services style */
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+}
+.Services-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+}
+.Services-cards .Services-item{
+    padding: 15px;
+   background-color: #F9F9F9;
+   border-radius: 15px;
+}
+.Services-cards .Services-item img{
+    width: 46px;
+}
+.Services-cards .Services-item h4{
+  font-size: 24px;
+  font-weight: 600;
+}
+.Services-cards .Services-item p{
+    font-size: 16px;
+    font-weight: 400;
+  }
+.Services-cards .Services-item:hover{
+   background-color: #fff;
+   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Customer-Review */
+.customer-review{
+    background-color: #ECF1F0;
+    width: 100%;
+    padding-block: 30px;
+    margin-block: 30px;
+}
+.customer-review .customer-text{
+    text-align: center;
+}
+.customer-review-cards{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 136px;
+    margin-top: 40px;
+}
+.customer-review-cards .customer-review-card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+/* popular-distinations */
+.distination-location{
+    flex-basis: 50%;
+}
+.popular-distinations{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.location-img-heading {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.location-img-heading .distination-location-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-inline: 15px;
+}
+
+.distination-location-img {
+    width: 35%;
+    /* height: 100%; */
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+
+}
+.distination-location-img img {
+    width: 100%;
+    height: 100%;
+}
+.popular-distinations .distination-map {
+    position: relative; 
+    height: 300px; 
+}
+  
+.popular-distinations .distination-map::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: ""; 
+    background-image: url('./img/world_map_PNG28 2.png');
+    background-size: cover; 
+    background-position: center;
+    background-color: aqua; 
+    z-index: 100000; 
+    padding-block: 50px;
+  }
+  /* package */
+  .tab-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-block: 40px;
+  }
+  button.tab-button {
+    padding: 10px;
+    background: gray;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    max-width: 180px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.tab-button.active{
+    background-color: #00cc6e;
+}
+.time-spand{
+    display: flex;
+    justify-content: space-between;
+}
+.package-travel{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+.package-card .place-img img{
+   width: 100%;
+   height: 100%;
+}
+.package-card{
+    position: relative;
+}
+.place-heading{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    min-height: 100px;
+}
+/* footer */
+.footer{
+    height: 100vh;
+}

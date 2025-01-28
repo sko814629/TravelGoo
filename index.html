@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Goo</title>
+
+    <!-- Font anwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Font for Styling -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Travel <span>Goo</span></div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Packages</a></li>
+        </ul>
+        <div class="icons">
+          <i class="fa-regular fa-star" style="color: rgb(228, 126, 53)"></i>
+          <i class="fa-solid fa-circle-user"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>
+            Your Imagination Is<br />
+            Your Only Limit
+          </h1>
+          <p>
+            We always try to make our customers happy. We provide a wide
+            selection<br />of travel destinations to make your journey
+            unforgettable.
+          </p>
+          <a href="#" class="btn">Discover more</a>
+        </div>
+      </section>
+      <section class="Services">
+        <h2 class="title">Our Serives</h2>
+        <div class="Services-cards container">
+          <div class="Services-item">
+            <img src="./img/Vector (10).png" alt="Ticket Booking Icon" />
+            <h4>Ticket Booking</h4>
+            <p>
+              We book all kind of national or international ticket for your
+              destinaion.
+            </p>
+          </div>
+          <div class="Services-item">
+            <img src="./img/carbon_hotel.png" alt="Hotel Booking Icon" />
+            <h4>Hotel Booking</h4>
+            <p>
+              You can easily book your according to your budget hotel by our
+              website.
+            </p>
+          </div>
+          <div class="Services-item">
+            <img src="./img/cil_paper-plane.png" alt="Tour Plan Icon" />
+            <h4>Tour Plan</h4>
+            <p>
+              We provide you the best plan within a short time explore more.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="customer-review">
+        <h2 class="title">
+          We always try to give you <br />
+          the best service
+        </h2>
+        <p class="customer-text">
+          We always try to make our customer Happy. We provide all kind of
+          <br />
+          facilities. Your Satisfaction is our main priority.
+        </p>
+        <div class="customer-review-cards container">
+          <div class="customer-review-card">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h4>15+</h4>
+            <p>Years of Experience</p>
+          </div>
+          <div class="customer-review-card">
+            <i class="fa-solid fa-chart-simple"></i>
+            <h4>15k+</h4>
+            <p>Happy Travellers</p>
+          </div>
+          <div class="customer-review-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>650+</h4>
+            <p>Places Visited</p>
+          </div>
+          <div class="customer-review-card">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <h4>2k+</h4>
+            <p>Travel History</p>
+          </div>
+        </div>
+      </section>
+      <section class="distinations">
+        <h2 class="title">Our Popular Distinations</h2>
+        <div class="popular-distinations container">
+          <div class="distination-map"></div>
+          <div class="distination-location">
+            <div class="location-img-heading">
+              <div class="distination-location-img">
+                <img src="./img/Rectangle 15.png" alt="" />
+              </div>
+              <div class="distination-location-heading">
+                <h4>Thailand</h4>
+                <p>
+                  20+ Spots <br />
+                  2D & 3N
+                </p>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="location-img-heading">
+              <div class="distination-location-img">
+                <img src="./img/Rectangle 16.png" alt="" />
+              </div>
+              <div class="distination-location-heading">
+                <h4>Indonesia</h4>
+                <p>
+                  25+ Spots <br />
+                  2D & 3N
+                </p>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div class="location-img-heading">
+              <div class="distination-location-img">
+                <img src="./img/Rectangle 17.png" alt="" />
+              </div>
+              <div class="distination-location-heading">
+                <h4>New Zeland</h4>
+                <p>
+                  30+ Spots <br />
+                  2D & 3N
+                </p>
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="package">
+        <h2 class="title">Best Packages For You</h2>
+        <div class="tabs container">
+          <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'tab1')">
+              Hot Deals
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'tab2')">
+              Backpack
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">
+              South Asia
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">
+              South Asia
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">
+              Europe
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'tab3')">
+              More
+            </button>
+          </div>
+
+          <div class="tab-content">
+            <div id="tab1" class="tab-pane active">
+              <div class="package-travel">
+                <div class="package-card">
+                    <div class="place-img">
+                        <img src="./img/Rectangle 25.png" alt="" />
+                    </div>
+                  <div class="place-heading">
+                    <div class="time-spand">
+                        <p>3 Days, 2 NIghts</p>
+                        <p>$500 / Person</p>
+                      </div>
+                      <p>
+                        Explore the Beauty of the island for 3 days and 2 nights
+                        with our travel agency
+                      </p>
+                  </div>
+                  
+                </div>
+                <div class="package-card">
+                    <div class="place-img">
+                        <img src="./img/Rectangle 25.png" alt="" />
+                    </div>
+                  <div class="place-heading">
+                    <div class="time-spand">
+                        <p>3 Days, 2 NIghts</p>
+                        <p>$500 / Person</p>
+                      </div>
+                      <p>
+                        Explore the Beauty of the island for 3 days and 2 nights
+                        with our travel agency
+                      </p>
+                  </div>
+                  
+                </div>
+                <div class="package-card">
+                    <div class="place-img">
+                        <img src="./img/Rectangle 25.png" alt="" />
+                    </div>
+                  <div class="place-heading">
+                    <div class="time-spand">
+                        <p>3 Days, 2 NIghts</p>
+                        <p>$500 / Person</p>
+                      </div>
+                      <p>
+                        Explore the Beauty of the island for 3 days and 2 nights
+                        with our travel agency
+                      </p>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <!-- <div id="tab2" class="tab-pane">
+                <h2>Content for Tab 2</h2>
+                <p>This is some content for the second tab.</p>
+              </div>
+              <div id="tab3" class="tab-pane">
+                <h2>Content for Tab 3</h2>
+                <p>This is some content for the third tab.</p>
+              </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"></footer>
+  </body>
+</html>
