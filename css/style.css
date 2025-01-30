@@ -12,11 +12,11 @@ body {
     line-height: 1.6;
     /* color: #fff; */
 }
-.container{
+.container {
     max-width: 1438px;
-    margin: 0 auto;
-    padding-inline: 20px;
-}
+    margin: 0 auto; /* Centering */
+    padding: 0 20px; /* Optional padding */
+  }
 /* Navbar Styling */
 .navbar {
     display: flex;
@@ -124,12 +124,13 @@ body {
 }
 
 /* Services style */
-.title{
+.title {
     font-size: 40px;
     font-weight: bold;
     color: #000000;
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    padding-block: 50px;
 }
 .Services-cards{
     display: flex;
@@ -156,7 +157,12 @@ body {
    background-color: #fff;
    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
-
+.testmontial-customer {
+    max-width: 80%;
+    margin: 0 auto;
+    /* left: 30px; */
+    padding-inline:60px;
+}
 /* Customer-Review */
 .customer-review{
     background-color: #ECF1F0;
@@ -230,17 +236,23 @@ body {
     background-image: url('./img/world_map_PNG28 2.png');
     background-size: cover; 
     background-position: center;
-    background-color: aqua; 
+  
     z-index: 100000; 
     padding-block: 50px;
   }
   /* package */
-  .tab-buttons{
+  .package{
+    background-color: #ECF1F0;
+    padding-block: 15px;
+  }
+  .tab-buttons {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-block: 40px;
-  }
+    flex-wrap: wrap;
+    gap: 10px;
+}
   button.tab-button {
     padding: 10px;
     background: gray;
@@ -272,14 +284,282 @@ body {
 .package-card{
     position: relative;
 }
-.place-heading{
+.place-heading {
     position: absolute;
     left: 0;
     bottom: 0;
     background-color: #fff;
     min-height: 100px;
+    padding: 15px;
 }
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .location {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .location i {
+    margin-right: 4px;
+  }
+
+  .know-more {
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  .place-heading .time-spand {
+    margin-block: 10px;
+  }
+  .descover-btn{
+width: 100%;
+display: flex;
+justify-content: center;
+  }
+  .descover-btn button{
+    background-color: #00A651;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  /* trip-description */
+  .trip-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    
+  }
+  .trip-icon-heading{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom:20px;
+  }
+  .trip-img {
+    flex-basis: 45%;
+   
+    padding: 15px;
+ 
+    position: relative;
+   
+}
+.trip-img::before {
+position: absolute;
+left: 0;
+top:0;
+    background-color:#fff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #e9e7e7;
+ 
+    content: "";
+    max-width: 400px;
+    width: 100%;
+    height: 370px;
+    z-index: -1;
+   
+}
+  .trip-img-description{
+    margin-block: 10px;
+  }
+  .trip-img img{
+ 
+    border-radius: 20px;
+  }
+ 
+  .trip-icon-img {
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    gap: 15px; 
+  }
+  
+  .trip-icon-img a {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 50px; 
+    height: 50px;
+    background-color: #0077b6;
+    border-radius: 50%; 
+    color: white;
+    text-decoration: none; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease; 
+  }
+  
+  .trip-icon-img a:hover {
+    transform: scale(1.1); 
+    background-color: #005f8a; 
+  }
+  
+  .trip-icon-img i {
+    font-size: 20px; 
+  }
+  .trip-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    max-width: 370px;
+  }
+  /* testmontial-review */
+  .testmontial
+  {
+    background-color: #ECF1F0;
+    padding-bottom: 50px;
+  }
+  .testmontial-review {
+    max-width: 100%;
+    
+    overflow-x: hidden;
+}
+.testmontial-customer{
+max-width: 80%;
+margin: 0 auto;
+}
+  .testmontial-customer img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+ .testmontial-customer{
+    position: relative;
+ }
+ .customer-review-block{
+position: absolute;
+left: 50%;
+bottom: -40px;
+width: 100%;
+height: 100%;
+background-color: #ECF1F0;
+max-width: 500px;
+height: 200px;
+z-index: 9999;
+transform: translateX(-50%);
+border: 1px solid;
+z-index: 999999;
+ }
+ .customer-img{
+    padding-inline: 15px;
+ }
+ .customer-img  img                                     {
+    width: 70px;
+    margin-inline: auto; 
+    margin-block:-30px 20px;                         
+ }
+ /* contact */
+ .contact-box {
+  text-align: center;
+  background-color: #9FFFEC;
+  max-width: 1170px;
+  border-top-left-radius: 70px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 30px;
+  padding-block: 50px;
+  position: relative;
+  opacity: 0.5;
+}
+ .contact-box input{
+padding: 10px 15px;
+ }
+ .share-btn{
+  position: absolute;
+  right:-10px;
+  top: -10px;
+ }
+ .share-btn a{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background-color: #00A651;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  
+ }
+ .input-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gamil-icon{
+  position: relative;
+}
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  color: #d14836; /* Gmail red color */
+}
+
+.input-container input {
+  padding-left: 35px; /* Space for icon */
+  height: 40px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+ .share-btn a i{
+color: #fff;
+ }
 /* footer */
-.footer{
-    height: 100vh;
+.footer-grid{
+  display: grid;
+  grid-template-columns: repeat(5 ,1fr);
+  padding-block: 50px;
+}
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer-item a{
+  color: #000;
+  text-decoration: none;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: block;
+  margin:  15px;
+
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+.footer-announcement{
+  display: flex;
+  justify-content: center;
 }
