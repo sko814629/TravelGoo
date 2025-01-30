@@ -1,71 +1,76 @@
 /* Large Tablets and Small Laptops */
 @media (max-width: 1024px) {
-    /* Styles for 1024px screens */
-    .testmontial-customer {
-        padding-inline:30px;
-        max-width: 100%;
-    }
+  .testmontial-customer {
+      padding-inline: 30px;
+      max-width: 100%;
   }
-  
-  /* Regular Tablets */
-  @media (max-width: 768px) {
-    /* Styles for tablets and smaller screens */
-    .navbar {
+}
+
+/* Regular Tablets */
+@media (max-width: 768px) {
+  .navbar {
       display: block;
-    
   }
   .customer-review-cards {
-    grid-template-columns: repeat(2 ,1fr);
-    gap: 40px;
-   
-}
-.Services-cards {
-  display: block;
-}
-.Services-cards .Services-item{margin-bottom: 20px;
-
-}
-.popular-distinations {
-  display: block;
-
-}
-.distination-map{
-  display: none;
-}
-.package-travel {
-  display: block;
- 
-}
-.tab-buttons .tab-button{
-  flex-basis: 45%;
-}
-.package-card {
-  margin-bottom: 20px;
-}
-.trip-description {
-  display: block;
-}
-.footer-grid {
-  grid-template-columns: repeat(2,1fr);
-}
-.customer-review-block {
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(20px, 5vw, 40px);
+  }
+  .Services-cards,
+  .popular-distinations,
+  .package-travel,
+  .trip-description {
+      display: block;
+  }
+  .Services-cards .Services-item {
+      margin-bottom: 20px;
+  }
+  .distination-map {
+      display: none;
+  }
+  .tab-buttons .tab-button {
+      flex: 1 1 45%;
+  }
+  .package-card {
+      margin-bottom: 20px;
+  }
+  .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-links,
+  .icons {
+      display: none; /* Instead of visibility: hidden */
+  }
+  .customer-review-block {
+  max-height: 142px;
   max-width: 300px;
-  min-height: 200px;
- 
-}
-.nav-links {
-
-  display: block;
-  text-align: center;
- visibility: hidden;
-}
-.icons {
-  justify-content: center;
-  visibility: hidden;
-}
   }
+  .customer-review-block {
+    max-width: 300px;
   
-  /* Mobile Phones */
-  @media (max-width: 576px) {
-    /* Styles for phones */
+}
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .footer-grid {
+      grid-template-columns: 1fr;
   }
+  section.contact {
+      max-width: 300px;
+      width: 100%;
+      margin: auto;
+  }
+  .title {
+      font-size: 15px;
+      padding-block: 30px;
+  }
+  .input-container input {
+      max-width: 250px;
+  }
+  .contact-box .input-container .btn {
+      margin-top: 10px;
+  }
+  .footer-item {
+    margin-bottom: 20px;
+}
+}
